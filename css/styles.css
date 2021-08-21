@@ -4,7 +4,7 @@ Desarrollado por Dalía Macías Muñoz
  1.1 - Hero container
  2 - First Grid container
  3 - CARDS FLEX */
- 
+
 /*break points and mediaqueries 
 1 mobile:  min width 300px
 2 tablet & mobile landscape: min-width:768px and max-width:991px 
@@ -14,7 +14,6 @@ missing mediaqueries: watches and large desktops needed. */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
 
 * {
   margin: 0;
@@ -42,673 +41,666 @@ h4 {
 }
 
 /*mobile portrait*/
-@media (min-width: 300px){
-  
-/* 1 .- Hero container*/
+@media (min-width: 300px) {
+  /* 1 .- Hero container*/
 
-.hero {
-  display: flex;
-  padding: 4rem 2rem 0 2rem;
-  width: 100%;
-  color: white;
-  min-height: 100vh;
-  flex-wrap: wrap;
-  background-image: url("https://images3.alphacoders.com/784/thumb-1920-78425.jpg");
-}
-.logo {
-  width: 80%;
-}
+  .hero {
+    display: flex;
+    padding: 4rem 2rem 0 2rem;
+    width: 100%;
+    color: white;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-image: url("https://images3.alphacoders.com/784/thumb-1920-78425.jpg");
+  }
+  .logo {
+    width: 80%;
+  }
 
-/*mobile portrait*/
-.logo img {
-  width: 5vh;
-}
-.header {
-  width: 100%;
-  min-height: 20%;
-  margin: auto;
-  text-align: right;
-  justify-content: right;
-}
+  /*mobile portrait*/
+  .logo img {
+    width: 7vh;
+  }
+  .header {
+    width: 100%;
+    min-height: 20%;
+    margin: auto;
+    text-align: right;
+    justify-content: right;
+  }
+  .header h1 {
+    font-size: xx-large;
+  }
+  .header h4 {
+    font-size: large;
+  }
 
-/* 2.- First Grid container*//*mobile portrait*/
-.container {
-  max-width: 100vw;
-  padding: 2rem 5%;
-  background-color: white;
-}
-.grid-container {
-  width: 100%;
-  margin:2rem auto 0 auto;
-  display: grid;
-  grid-template-rows: 6rem 6rem 6rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    " area2 area1  area1"
-    " area2 area5  area3"
-    " area4 area4  area3";
-}
-/*mobile portrait*/
-.grid-item1 {
-  background-image: url("https://i.pinimg.com/originals/24/2b/3d/242b3d822e8c8caacafd220fd2533a91.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 1;
-	-webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all .5s linear;
-  grid-area: area1;
-}
-.grid-item1:hover{
-  opacity: 0.5;
-  cursor:pointer;
-}
-/*mobile portrait*/
-.grid-item2 {
-  background: grey;
-  background-image: url("https://www.xtrafondos.com/descargar.php?id=4291&vertical=1");
-  background-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all 1s linear;
-  grid-area: area2;
-}/*mobile portrait*/
-.grid-item2:hover{
-  background-position: center;
-  cursor: pointer;
-}
-/*mobile portrait*/
+  /* 2.- First Grid container*/ /*mobile portrait*/
+  .container {
+    max-width: 100vw;
+    padding: 2rem 5%;
+    background-color: white;
+  }
+  .grid-container {
+    width: 100%;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-rows: 6rem 6rem 6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      " area2 area1  area1"
+      " area2 area5  area3"
+      " area4 area4  area3";
+  }
+  /*mobile portrait*/
+  .grid-item1 {
+    background-image: url("https://i.pinimg.com/originals/24/2b/3d/242b3d822e8c8caacafd220fd2533a91.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    grid-area: area1;
+  }
+  .grid-item1:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  /*mobile portrait*/
+  .grid-item2 {
+    background: grey;
+    background-image: url("https://www.xtrafondos.com/descargar.php?id=4291&vertical=1");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 1s linear;
+    grid-area: area2;
+  } /*mobile portrait*/
+  .grid-item2:hover {
+    background-position: center;
+    cursor: pointer;
+  }
+  /*mobile portrait*/
 
-.grid-item3 {
-  background: rgb(145, 15, 15);
-  background-size: cover;
-  background-image: url("https://www.xtrafondos.com/wallpapers/vertical/bosque-durante-el-otono-4255.jpg");
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all .5s linear;
-  grid-area: area3;
-}
-.grid-item3:hover{
-  background-position: left;
-}
-/*mobile portrait*/
-.grid-item4 {
-  background: rgb(252, 86, 86);
-  background-image: url("https://p4.wallpaperbetter.com/wallpaper/685/337/163/bridge-forest-nature-trees-wallpaper-preview.jpg");
-  background-size: cover;
-  grid-area: area4;
-  transition: all 0.5s;
-}
-.grid-item4:hover{
-  transform: scale(1.02);
-}/*mobile portrait*/
-.grid-item5 {
-  background: rgb(117, 8, 206);
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fho5ia6R9B2ElzBvwnShoUGqjyxui9rBSOQEgA-gINXD5zjGpVKmBKm_pYnfOnO0oiE&usqp=CAU");
-  background-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all 3s linear;
-  grid-area: area5;
-}
-/*mobile portrait*/
-.grid-item5:hover {
-  background-position: center;
-  cursor: pointer;
+  .grid-item3 {
+    background: rgb(145, 15, 15);
+    background-size: cover;
+    background-image: url("https://www.xtrafondos.com/wallpapers/vertical/bosque-durante-el-otono-4255.jpg");
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    grid-area: area3;
+  }
+  .grid-item3:hover {
+    background-position: left;
+  }
+  /*mobile portrait*/
+  .grid-item4 {
+    background: rgb(252, 86, 86);
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/685/337/163/bridge-forest-nature-trees-wallpaper-preview.jpg");
+    background-size: cover;
+    grid-area: area4;
+    transition: all 0.5s;
+  }
+  .grid-item4:hover {
+    transform: scale(1.02);
+  } /*mobile portrait*/
+  .grid-item5 {
+    background: rgb(117, 8, 206);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fho5ia6R9B2ElzBvwnShoUGqjyxui9rBSOQEgA-gINXD5zjGpVKmBKm_pYnfOnO0oiE&usqp=CAU");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 3s linear;
+    grid-area: area5;
+  }
+  /*mobile portrait*/
+  .grid-item5:hover {
+    background-position: center;
+    cursor: pointer;
+  }
 
-}
+  /*3.- CARDS FLEX */ /*mobile portrait*/
+  .flex-container {
+    width: 100%;
+    min-height: 90vh;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-/*3.- CARDS FLEX *//*mobile portrait*/
-.flex-container {
-  width: 100%;
-  min-height: 90vh;
-  margin: 2rem auto;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
-}
+  .card-text h3 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: lighter;
+    font-size: x-large;
+    text-align: center;
+    margin: 1rem auto;
+  } /*mobile portrait*/
+  .card-text {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    font-size: small;
+    bottom: 5rem;
+    left: 10%;
+    text-align: justify;
+    color: white;
+    width: 80%;
+  } /*mobile portrait*/
+  .card3 {
+    width: 100%;
+    min-height: 20rem;
+    margin: 2rem 1rem;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/375/539/687/riverside-old-car-nature-art-wallpaper-preview.jpg");
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s;
+  } /*mobile portrait*/
+  .card3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8687850140056023) 52%,
+      rgba(131, 160, 203, 0) 81%,
+      rgba(139, 169, 215, 0) 100%
+    );
+  } /*mobile portrait*/
+  .card3:hover {
+    transform: scale(1.02);
+  }
+  .red-button {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 4rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background-color: #880505;
+    transition: color 0.5s ease 0.2s;
+  }
+  .red-button:hover {
+    font-size: large;
+    background-color: #250402;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
 
-.card-text h3 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: lighter;
-  font-size: x-large;
-  text-align: center;
-  margin: 1rem auto;
-
-}/*mobile portrait*/
-.card-text {
-  font-family: "Open Sans", sans-serif;
-  position: absolute;
-  font-size: small;
-  bottom: 20%;
-  left: 10%;
-  text-align: justify;
-  color: white;
-  width: 80%;
-  
-}/*mobile portrait*/
-.card3 {
-  width: 100%;
-  min-height:60vh ;
-  margin:2rem 1rem;
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/375/539/687/riverside-old-car-nature-art-wallpaper-preview.jpg");
-  background-position: 80% center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  -webkit-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s;
-}/*mobile portrait*/
-.card3:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8687850140056023) 52%,
-    rgba(131, 160, 203, 0) 81%,
-    rgba(139, 169, 215, 0) 100%
-  );
-}/*mobile portrait*/
-.card3:hover{
-  transform: scale(1.02);
-}
-.red-button {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  height: 4rem;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  background-color: #880505;
-  transition: color 0.5s ease 0.2s;
-}
-.red-button:hover {
-  font-size: large;
-  background-color: #250402;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
-a:visited {
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-}
-
-/* 4 - FOOTER *//*mobile portrait*/
-footer {
-  background-color: #171717;
-  color: white;
-  height: 8em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer h2{
-  text-align: center;
-  font-size: x-large;
-}
+  /* 4 - FOOTER */ /*mobile portrait*/
+  footer {
+    background-color: #171717;
+    color: white;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h2 {
+    text-align: center;
+    font-size: x-large;
+  }
 }
 
 /*Tablet portrait & mobile landscape*/
-@media (min-width:768px) and (max-width:991px){
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 1 .- Hero container*/
 
-/* 1 .- Hero container*/
+  .hero {
+    display: flex;
+    padding: 3rem 4rem 0 4rem;
+    width: 100%;
+    color: white;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-image: url("https://images3.alphacoders.com/784/thumb-1920-78425.jpg");
+  }
+  .logo {
+    width: 100%;
+  }
+  /*Tablet portrait & mobile landscape*/
+  .logo img {
+    width: 10vh;
+  }
+  .header {
+    width: 100%;
+    min-height: 20%;
+    margin: auto;
+    text-align: right;
+    justify-content: right;
+  }
 
-.hero {
-  display: flex;
-  padding: 3rem 4rem 0 4rem;
-  width: 100%;
-  color: white;
-  min-height: 100vh;
-  flex-wrap: wrap;
-  background-image: url("https://images3.alphacoders.com/784/thumb-1920-78425.jpg");
-}
-.logo {
-  width: 100%;
-}
-/*Tablet portrait & mobile landscape*/
-.logo img {
-  width: 10vh;
-}
-.header {
-  width: 100%;
-  min-height: 20%;
-  margin: auto;
-  text-align: right;
-  justify-content: right;
-}
+  /* 2.- First Grid container*/ /*Tablet portrait & mobile landscape*/
+  .container {
+    max-width: 100vw;
+    padding: 4rem 5%;
+    background-color: white;
+  }
+  .grid-container {
+    width: 100%;
+    background-color: white;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-rows: 13rem 13rem 13rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      " area2 area1  area1"
+      " area2 area5  area3"
+      " area4 area4  area3";
+  }
+  /*Tablet portrait & mobile landscape*/
+  .grid-item1 {
+    background-image: url("https://i.pinimg.com/originals/24/2b/3d/242b3d822e8c8caacafd220fd2533a91.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    grid-area: area1;
+  }
+  .grid-item1:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  /*Tablet portrait & mobile landscape*/
+  .grid-item2 {
+    background: grey;
+    background-image: url("https://www.xtrafondos.com/descargar.php?id=4291&vertical=1");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 1s linear;
+    grid-area: area2;
+  } /*Tablet portrait & mobile landscape*/
+  .grid-item2:hover {
+    background-position: center;
+    cursor: pointer;
+  }
+  /*Tablet portrait & mobile landscape*/
 
-/* 2.- First Grid container*//*Tablet portrait & mobile landscape*/
-.container {
-  max-width: 100vw;
-  padding: 4rem 5%;
-  background-color: white;
-}
-.grid-container {
-  width: 100%;
-  background-color: white;
-  margin:2rem auto 0 auto;
-  display: grid;
-  grid-template-rows: 13rem 13rem 13rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    " area2 area1  area1"
-    " area2 area5  area3"
-    " area4 area4  area3";
-}
-/*Tablet portrait & mobile landscape*/
-.grid-item1 {
-  background-image: url("https://i.pinimg.com/originals/24/2b/3d/242b3d822e8c8caacafd220fd2533a91.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 1;
-	-webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all .5s linear;
-  grid-area: area1;
-}
-.grid-item1:hover{
-  opacity: 0.5;
-  cursor:pointer;
-}
-/*Tablet portrait & mobile landscape*/
-.grid-item2 {
-  background: grey;
-  background-image: url("https://www.xtrafondos.com/descargar.php?id=4291&vertical=1");
-  background-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all 1s linear;
-  grid-area: area2;
-}/*Tablet portrait & mobile landscape*/
-.grid-item2:hover{
-  background-position: center;
-  cursor: pointer;
-}
-/*Tablet portrait & mobile landscape*/
+  .grid-item3 {
+    background: rgb(145, 15, 15);
+    background-size: cover;
+    background-image: url("https://www.xtrafondos.com/wallpapers/vertical/bosque-durante-el-otono-4255.jpg");
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    grid-area: area3;
+  }
+  .grid-item3:hover {
+    background-position: left;
+  }
+  /*Tablet portrait & mobile landscape*/
+  .grid-item4 {
+    background: rgb(252, 86, 86);
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/685/337/163/bridge-forest-nature-trees-wallpaper-preview.jpg");
+    background-size: cover;
+    grid-area: area4;
+    transition: all 0.5s;
+  }
+  .grid-item4:hover {
+    transform: scale(1.02);
+  } /*Tablet portrait & mobile landscape*/
+  .grid-item5 {
+    background: rgb(117, 8, 206);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fho5ia6R9B2ElzBvwnShoUGqjyxui9rBSOQEgA-gINXD5zjGpVKmBKm_pYnfOnO0oiE&usqp=CAU");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 3s linear;
+    grid-area: area5;
+  }
+  /*Tablet portrait & mobile landscape*/
+  .grid-item5:hover {
+    background-position: center;
+    cursor: pointer;
+  }
 
-.grid-item3 {
-  background: rgb(145, 15, 15);
-  background-size: cover;
-  background-image: url("https://www.xtrafondos.com/wallpapers/vertical/bosque-durante-el-otono-4255.jpg");
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all .5s linear;
-  grid-area: area3;
-}
-.grid-item3:hover{
-  background-position: left;
-}
-/*Tablet portrait & mobile landscape*/
-.grid-item4 {
-  background: rgb(252, 86, 86);
-  background-image: url("https://p4.wallpaperbetter.com/wallpaper/685/337/163/bridge-forest-nature-trees-wallpaper-preview.jpg");
-  background-size: cover;
-  grid-area: area4;
-  transition: all 0.5s;
-}
-.grid-item4:hover{
-  transform: scale(1.02);
-}/*Tablet portrait & mobile landscape*/
-.grid-item5 {
-  background: rgb(117, 8, 206);
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fho5ia6R9B2ElzBvwnShoUGqjyxui9rBSOQEgA-gINXD5zjGpVKmBKm_pYnfOnO0oiE&usqp=CAU");
-  background-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all 3s linear;
-  grid-area: area5;
-}
-/*Tablet portrait & mobile landscape*/
-.grid-item5:hover {
-  background-position: center;
-  cursor: pointer;
+  /*3.- CARDS FLEX */ /*Tablet portrait & mobile landscape*/
+  .flex-container {
+    width: 100%;
+    min-height: 90vh;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-}
+  .card-text h3 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: lighter;
+    font-size: x-large;
+    text-align: center;
+    margin: 1rem auto;
+  } /*Tablet portrait & mobile landscape*/
+  .card-text {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    font-size: small;
+    bottom: 5rem;
+    left: 10%;
+    text-align: justify;
+    color: white;
+    width: 80%;
+  } /*Tablet portrait & mobile landscape*/
+  .card3 {
+    width: 45%;
+    height: 80vh;
+    margin: 2rem 1rem;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/375/539/687/riverside-old-car-nature-art-wallpaper-preview.jpg");
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s;
+  } /*Tablet portrait & mobile landscape*/
+  .card3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8687850140056023) 52%,
+      rgba(131, 160, 203, 0) 81%,
+      rgba(139, 169, 215, 0) 100%
+    );
+  } /*Tablet portrait & mobile landscape*/
+  .card3:hover {
+    transform: scale(1.02);
+  }
+  .red-button {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 4rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background-color: #880505;
+    transition: color 0.5s ease 0.2s;
+  }
+  .red-button:hover {
+    font-size: large;
+    background-color: #250402;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
 
-/*3.- CARDS FLEX *//*Tablet portrait & mobile landscape*/
-.flex-container {
-  width: 100%;
-  min-height: 90vh;
-  margin: 2rem auto;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
-}
-
-.card-text h3 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: lighter;
-  font-size: x-large;
-  text-align: center;
-  margin: 1rem auto;
-
-}/*Tablet portrait & mobile landscape*/
-.card-text {
-  font-family: "Open Sans", sans-serif;
-  position: absolute;
-  font-size: small;
-  bottom: 20%;
-  left: 10%;
-  text-align: justify;
-  color: white;
-  width: 80%;
-  
-}/*Tablet portrait & mobile landscape*/
-.card3 {
-  width: 45%;
-  height: 80vh;
-  margin:2rem 1rem;
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/375/539/687/riverside-old-car-nature-art-wallpaper-preview.jpg");
-  background-position: 80% center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  -webkit-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s;
-}/*Tablet portrait & mobile landscape*/
-.card3:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8687850140056023) 52%,
-    rgba(131, 160, 203, 0) 81%,
-    rgba(139, 169, 215, 0) 100%
-  );
-}/*Tablet portrait & mobile landscape*/
-.card3:hover{
-  transform: scale(1.02);
-}
-.red-button {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  height: 4rem;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  background-color: #880505;
-  transition: color 0.5s ease 0.2s;
-}
-.red-button:hover {
-  font-size: large;
-  background-color: #250402;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
-a:visited {
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-}
-
-/* 4 - FOOTER *//*Tablet portrait & mobile landscape*/
-footer {
-  background-color: #171717;
-  color: white;
-  height: 8em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* 4 - FOOTER */ /*Tablet portrait & mobile landscape*/
+  footer {
+    background-color: #171717;
+    color: white;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*Small desktops & tables landscape*/
-@media(min-width:992px){
-  
-/* 1 .- Hero container*/
+@media (min-width: 992px) {
+  /* 1 .- Hero container*/
 
-.hero {
-  display: flex;
-  padding: 5rem 8rem 0 8rem;
-  width: 100%;
-  color: white;
-  min-height: 100vh;
-  flex-wrap: wrap;
-  background-image: url("https://images3.alphacoders.com/784/thumb-1920-78425.jpg");
-  
-}
-.logo {
-  width: 100%;
-}
-.logo img {
-  width: 10vh;
-}
-.header {
-  width: 100%;
-  min-height: 30%;
-  margin: 1rem auto;
-  text-align: right;
-  justify-content: right;
-  
-}
+  .hero {
+    display: flex;
+    padding: 5rem 8rem 0 8rem;
+    width: 100%;
+    color: white;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-image: url("https://images3.alphacoders.com/784/thumb-1920-78425.jpg");
+  }
+  .logo {
+    width: 100%;
+  }
+  .logo img {
+    width: 10vh;
+  }
+  .header {
+    width: 100%;
+    min-height: 30%;
+    margin: 1rem auto;
+    text-align: right;
+    justify-content: right;
+  }
 
-/* 2.- First Grid container*/
-.container {
-  max-width: 100vw;
-  padding: 4rem 10%;
-  background-color: white;
-}
-.grid-container {
-  width: 100%;
-  background-color: white;
-  margin: 3rem auto 0 auto;
-  display: grid;
-  grid-template-rows: 18rem 18rem 18rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 15px;
-  grid-template-areas:
-    " area2 area1  area1"
-    " area2 area5  area3"
-    " area4 area4  area3";
-}
+  /* 2.- First Grid container*/
+  .container {
+    max-width: 100vw;
+    padding: 4rem 10%;
+    background-color: white;
+  }
+  .grid-container {
+    width: 100%;
+    background-color: white;
+    margin: 3rem auto 0 auto;
+    display: grid;
+    grid-template-rows: 18rem 18rem 18rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+      " area2 area1  area1"
+      " area2 area5  area3"
+      " area4 area4  area3";
+  }
 
-.grid-item1 {
-  background-image: url("https://i.pinimg.com/originals/24/2b/3d/242b3d822e8c8caacafd220fd2533a91.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 1;
-	-webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all .5s linear;
-  grid-area: area1;
-}
-.grid-item1:hover{
-  opacity: 0.5;
-  cursor:pointer;
-}
+  .grid-item1 {
+    background-image: url("https://i.pinimg.com/originals/24/2b/3d/242b3d822e8c8caacafd220fd2533a91.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    grid-area: area1;
+  }
+  .grid-item1:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
 
-.grid-item2 {
-  background: grey;
-  background-image: url("https://www.xtrafondos.com/descargar.php?id=4291&vertical=1");
-  background-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all 1s linear;
-  grid-area: area2;
-}
-.grid-item2:hover{
-  background-position: center;
-  cursor: pointer;
-}
+  .grid-item2 {
+    background: grey;
+    background-image: url("https://www.xtrafondos.com/descargar.php?id=4291&vertical=1");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 1s linear;
+    grid-area: area2;
+  }
+  .grid-item2:hover {
+    background-position: center;
+    cursor: pointer;
+  }
 
+  .grid-item3 {
+    background: rgb(145, 15, 15);
+    background-size: cover;
+    background-image: url("https://www.xtrafondos.com/wallpapers/vertical/bosque-durante-el-otono-4255.jpg");
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    grid-area: area3;
+  }
+  .grid-item3:hover {
+    background-position: left;
+  }
 
-.grid-item3 {
-  background: rgb(145, 15, 15);
-  background-size: cover;
-  background-image: url("https://www.xtrafondos.com/wallpapers/vertical/bosque-durante-el-otono-4255.jpg");
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all .5s linear;
-  grid-area: area3;
-}
-.grid-item3:hover{
-  background-position: left;
-}
+  .grid-item4 {
+    background: rgb(252, 86, 86);
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/685/337/163/bridge-forest-nature-trees-wallpaper-preview.jpg");
+    background-size: cover;
+    grid-area: area4;
+    transition: all 0.5s;
+  }
+  .grid-item4:hover {
+    transform: scale(1.02);
+  }
+  .grid-item5 {
+    background: rgb(117, 8, 206);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fho5ia6R9B2ElzBvwnShoUGqjyxui9rBSOQEgA-gINXD5zjGpVKmBKm_pYnfOnO0oiE&usqp=CAU");
+    background-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 3s linear;
+    grid-area: area5;
+  }
 
-.grid-item4 {
-  background: rgb(252, 86, 86);
-  background-image: url("https://p4.wallpaperbetter.com/wallpaper/685/337/163/bridge-forest-nature-trees-wallpaper-preview.jpg");
-  background-size: cover;
-  grid-area: area4;
-  transition: all 0.5s;
-}
-.grid-item4:hover{
-  transform: scale(1.02);
-}
-.grid-item5 {
-  background: rgb(117, 8, 206);
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fho5ia6R9B2ElzBvwnShoUGqjyxui9rBSOQEgA-gINXD5zjGpVKmBKm_pYnfOnO0oiE&usqp=CAU");
-  background-size: cover;
-  mask-repeat: no-repeat;
-  -webkit-transition:  all .5s linear;
-	-moz-transition:  all .5s linear;
-	-o-transition:  all .5s linear;
-	transition:  all 3s linear;
-  grid-area: area5;
-}
+  .grid-item5:hover {
+    background-position: center;
+    cursor: pointer;
+  }
 
-.grid-item5:hover {
-  background-position: center;
-  cursor: pointer;
+  /*3.- CARDS FLEX */ /*small desktop*/
+  .flex-container {
+    width: 100%;
+    min-height: 90vh;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-}
+  .card-text h3 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: lighter;
+    font-size: x-large;
+    margin: 1rem auto;
+    text-align: left;
+  }
+  .card-text {
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    font-size: small;
+    bottom: 18%;
+    left: 10%;
+    text-align: justify;
+    color: white;
+    width: 80%;
+  }
+  .card3 {
+    width: 31%;
+    height: 75vh;
+    margin: 1rem 1%;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/375/539/687/riverside-old-car-nature-art-wallpaper-preview.jpg");
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s;
+  }
+  .card3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8687850140056023) 52%,
+      rgba(131, 160, 203, 0) 81%,
+      rgba(139, 169, 215, 0) 100%
+    );
+  }
+  .card3:hover {
+    transform: scale(1.02);
+  }
+  .red-button {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 4rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background-color: #880505;
+    transition: color 0.5s ease 0.2s;
+  }
+  .red-button:hover {
+    font-size: large;
+    background-color: #250402;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+  }
 
-/*3.- CARDS FLEX */ /*small desktop*/
-.flex-container {
-  width: 100%;
-  min-height: 90vh;
-  margin: 2rem auto;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
-}
-
-.card-text h3 {
-  font-family: "Bebas Neue", cursive;
-  font-weight: lighter;
-  font-size: x-large;
-  margin:1rem auto;
-  text-align: left;
-}
-.card-text {
-  font-family: "Open Sans", sans-serif;
-  position: absolute;
-  font-size:small;
-  bottom:18%;
-  left: 10%;
-  text-align: justify;
-  color: white;
-  width: 80%;
-}
-.card3 {
-  width: 31%;
-  height: 75vh;
-  margin:1rem 1%;
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/375/539/687/riverside-old-car-nature-art-wallpaper-preview.jpg");
-  background-position: 80% center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  -webkit-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s;
-}
-.card3:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8687850140056023) 52%,
-    rgba(131, 160, 203, 0) 81%,
-    rgba(139, 169, 215, 0) 100%
-  );
-}
-.card3:hover{
-  transform: scale(1.02);
-}
-.red-button {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  height: 4rem;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  background-color: #880505;
-  transition: color 0.5s ease 0.2s;
-}
-.red-button:hover {
-  font-size: large;
-  background-color: #250402;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
-}
-a:visited {
-  text-decoration: none;
-}
-a {
-  text-decoration: none;
-}
-
-/* 4 - FOOTER */
-footer {
-  background-color: #171717;
-  color: white;
-  height: 6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* 4 - FOOTER */
+  footer {
+    background-color: #171717;
+    color: white;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
