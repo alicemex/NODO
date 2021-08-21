@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* INDEX:
+ 1.0 - defaults
+ 1.1 - Hero container
+ 2 - First Grid container
+ 3 - CARDS FLEX */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1em;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 80;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: xx-large;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* 1 .- Hero container*/
+
+.hero {
+  display: flex;
+  padding: 5rem 8rem 0 8rem;
+  width: 100%;
+  color: white;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-image: url("https://images3.alphacoders.com/784/thumb-1920-78425.jpg");
+}
+.logo {
+  width: 100%;
+}
+.logo img {
+  width: 10vh;
+}
+.header {
+  width: 100%;
+  min-height: 30%;
+  margin: 1rem auto;
+  text-align: right;
+  justify-content: right;
+}
+
+/* 2.- First Grid container*/
+.container {
+  max-width: 100vw;
+  padding: 4rem 10%;
+  background-color: white;
+}
+.grid-container {
+  width: 100%;
+  background-color: white;
+  margin: 3rem auto 0 auto;
+  display: grid;
+  grid-template-rows: 18rem 18rem 18rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-areas:
+    " area2 area1  area1"
+    " area2 area5  area3"
+    " area4 area4  area3";
+}
+
+.grid-item1 {
+  background-image: url("https://i.pinimg.com/originals/24/2b/3d/242b3d822e8c8caacafd220fd2533a91.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: area1;
+}
+
+.grid-item2 {
+  background: grey;
+  background-image: url("https://www.xtrafondos.com/descargar.php?id=4291&vertical=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: area2;
+}
+.grid-item3 {
+  background: rgb(145, 15, 15);
+  background-size: cover;
+  background-image: url("https://www.xtrafondos.com/wallpapers/vertical/bosque-durante-el-otono-4255.jpg");
+  grid-area: area3;
+}
+
+.grid-item4 {
+  background: rgb(252, 86, 86);
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/685/337/163/bridge-forest-nature-trees-wallpaper-preview.jpg");
+  background-size: cover;
+  grid-area: area4;
+}
+.grid-item5 {
+  background: rgb(117, 8, 206);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fho5ia6R9B2ElzBvwnShoUGqjyxui9rBSOQEgA-gINXD5zjGpVKmBKm_pYnfOnO0oiE&usqp=CAU");
+  background-size: cover;
+  mask-repeat: no-repeat;
+  grid-area: area5;
+}
+
+.grid-item5:hover {
+  background-position: center;
+}
+
+/*3.- CARDS FLEX */
+.flex-container {
+  width: 100%;
+  min-height: 80vh;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text h3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: lighter;
+  font-size: xx-large;
+  text-align: center;
+}
+.card-text {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-align: justify;
+  color: white;
+  width: 80%;
+}
+.card3 {
+  width: 32%;
+  height: 80vh;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/375/539/687/riverside-old-car-nature-art-wallpaper-preview.jpg");
+  background-position: 80% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+}
+.card3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8687850140056023) 52%,
+    rgba(131, 160, 203, 0) 81%,
+    rgba(139, 169, 215, 0) 100%
+  );
+}
+.red-button {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  height: 4rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-color: #880505;
+  transition: color 0.5s ease 0.2s;
+}
+.red-button:hover {
+  font-size: large;
+  background-color: #250402;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+a:visited {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* 4 - FOOTER */
+footer {
+  background-color: #171717;
+  color: white;
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
