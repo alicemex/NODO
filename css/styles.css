@@ -81,7 +81,16 @@ h4 {
   background-image: url("https://i.pinimg.com/originals/24/2b/3d/242b3d822e8c8caacafd220fd2533a91.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 1;
+	-webkit-transition:  all .5s linear;
+	-moz-transition:  all .5s linear;
+	-o-transition:  all .5s linear;
+	transition:  all .5s linear;
   grid-area: area1;
+}
+.grid-item1:hover{
+  opacity: 0.5;
+  cursor:pointer;
 }
 
 .grid-item2 {
@@ -95,7 +104,14 @@ h4 {
   background: rgb(145, 15, 15);
   background-size: cover;
   background-image: url("https://www.xtrafondos.com/wallpapers/vertical/bosque-durante-el-otono-4255.jpg");
+  -webkit-transition:  all .5s linear;
+	-moz-transition:  all .5s linear;
+	-o-transition:  all .5s linear;
+	transition:  all .5s linear;
   grid-area: area3;
+}
+.grid-item3:hover{
+  background-position: left;
 }
 
 .grid-item4 {
@@ -103,17 +119,27 @@ h4 {
   background-image: url("https://p4.wallpaperbetter.com/wallpaper/685/337/163/bridge-forest-nature-trees-wallpaper-preview.jpg");
   background-size: cover;
   grid-area: area4;
+  transition: all 0.5s;
+}
+.grid-item4:hover{
+  transform: scale(1.02);
 }
 .grid-item5 {
   background: rgb(117, 8, 206);
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Fho5ia6R9B2ElzBvwnShoUGqjyxui9rBSOQEgA-gINXD5zjGpVKmBKm_pYnfOnO0oiE&usqp=CAU");
   background-size: cover;
   mask-repeat: no-repeat;
+  -webkit-transition:  all .5s linear;
+	-moz-transition:  all .5s linear;
+	-o-transition:  all .5s linear;
+	transition:  all 3s linear;
   grid-area: area5;
 }
 
 .grid-item5:hover {
   background-position: center;
+  cursor: pointer;
+
 }
 
 /*3.- CARDS FLEX */
@@ -151,6 +177,7 @@ h4 {
   -webkit-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 4px 28px -5px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s;
 }
 .card3:before {
   content: "";
@@ -166,6 +193,9 @@ h4 {
     rgba(131, 160, 203, 0) 81%,
     rgba(139, 169, 215, 0) 100%
   );
+}
+.card3:hover{
+  transform: scale(1.02);
 }
 .red-button {
   width: 100%;
